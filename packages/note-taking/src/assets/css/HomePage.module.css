@@ -1,0 +1,17 @@
+.container {
+	max-width: 1024px;
+	margin: auto;
+	padding-block: 3rem;
+	font-family: sans-serif;
+}
+
+h1 {
+	font-size: 1.75rem;
+	font-weight: 600;
+}
+
+@media screen and (min-width: 1024px) {
+	h1 {
+		font-size: 3rem;
+	}
+}

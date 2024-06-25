@@ -1,0 +1,74 @@
+/* form container */
+.container {
+	max-width: 900px;
+	margin: auto;
+	padding-block: 3rem;
+}
+
+/* form */
+form {
+	display: flex;
+	flex-direction: column;
+	gap: 1.5rem;
+	height: 80vh;
+}
+
+/* title input */
+.title {
+	font-size: 1.75rem;
+	font-weight: 600;
+	width: 100%;
+
+	border: solid 1px transparent;
+}
+
+.title::placeholder,
+.content::placeholder {
+	opacity: 0.3;
+}
+
+/* content input */
+.content {
+	resize: none;
+	min-height: 50vh;
+	font-size: 1rem;
+	font-weight: 400;
+	width: 100%;
+
+	border: solid 1px transparent;
+}
+
+/* buttons */
+.buttons {
+	margin: auto auto 0 0;
+	display: flex;
+	gap: 2rem;
+}
+
+.button {
+	font-size: 1rem;
+	font-weight: 400;
+
+	background-color: #efefef;
+
+	border: none;
+	border-radius: 6px;
+	padding-inline: 2rem;
+	padding-block: 0.5rem;
+
+	transition: 0.2s ease-in-out;
+	cursor: pointer;
+}
+
+.button:hover {
+	background-color: #e1e1e1;
+}
+
+@media screen and (min-width: 1024px) {
+	.title {
+		font-size: 3rem;
+	}
+	.content {
+		font-size: 1.125rem;
+	}
+}
